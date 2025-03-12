@@ -5,6 +5,8 @@ set(CMAKE_C_STANDARD 11)
 
 set(SOURCES
         src/main.c
+        src/logger.c
+        src/include/logger.h
 )
 
 if(WIN32)

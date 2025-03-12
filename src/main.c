@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 #include "include/wifi.h"
+#include "include/logger.h"
 
 void test() {
 #ifdef _WIN32
@@ -44,7 +45,14 @@ void test() {
 }
 
 int main(void) {
-    test();
+    loggerInit();
+
+    logMessage(LOG_INFO, "test completed 1");
+    logMessage(LOG_INFO, "test completed 2");
+    logMessage(LOG_ERROR, "test completed 3");
+    logMessage(LOG_WARNING, "test completed 4");
+    logMessage(LOG_DEBUG, "test completed 5");
+    logMessage(LOG_DEBUG, "test completed 6");
 
     return 0;
 }
