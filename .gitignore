@@ -1,0 +1,9 @@
+.idea/
+.vscode/
+.vs/
+
+cmake-build-debug/
+build/
+
+doc/*
+!doc/doxygen-awesome.css

@@ -1,0 +1,16 @@
+# Doxyfile 1.13.2
+
+PROJECT_NAME           = FishAP
+OUTPUT_DIRECTORY       = "doc"
+INPUT                  = "src"
+OUTPUT_LANGUAGE        = English
+FILE_PATTERNS          = *.c *.h
+EXTRACT_ALL            = YES
+RECURSIVE              = YES
+
+# Doxygen Awesome
+GENERATE_TREEVIEW      = YES
+DISABLE_INDEX          = NO
+FULL_SIDEBAR           = NO
+HTML_EXTRA_STYLESHEET  = "doc/doxygen-awesome.css"
+HTML_COLORSTYLE        = TOGGLE
